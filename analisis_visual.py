@@ -25,7 +25,7 @@ for tipo in ["rocoso", "gaseoso"]:
     plt.scatter(
         subset["radio"],
         subset["masa"],
-	s=10,
+	s=15,
         label=tipo,
 	alpha=0.6
     )
@@ -38,7 +38,6 @@ plt.ylabel("Masa (M⊕)")
 plt.title("Relación Masa-Radio de Exoplanetas")
 plt.grid()
 plt.legend()
-plt.axis('equal')
 plt.savefig("resultado.png", dpi=300) 
 # Esto no me acordaba y se lo pedí a gemini (hace mucho no guardo imagenes en python)
 # (Suelo tomar pantallazos) y la instrucción a la IA fue literalmente:
